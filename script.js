@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   if (users[login] === password) {
     console.log('Правильный логин и пароль');
-    window.location.href = 'https://sites.google.com/view/wielandtest';
+    window.location.href = 'indexhome.html';
   } else {
     console.log('Неправильный логин или пароль');
     error.style.display = 'block';
