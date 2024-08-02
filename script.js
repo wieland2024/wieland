@@ -1,5 +1,5 @@
 const users = {
-  "log1": "pas1",
+  "111": "222",
   "user2": "password2",
   "user3": "password3",
   "user4": "password4",
@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   if (users[login] === password) {
     console.log('Правильный логин и пароль');
-    window.location.href = 'https://sites.google.com/view/wielandtest';
+    window.location.href = 'indexhome.html';
   } else {
     console.log('Неправильный логин или пароль');
     error.style.display = 'block';
