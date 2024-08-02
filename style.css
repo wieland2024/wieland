@@ -1,88 +1,86 @@
 body {
-    background-color: #000000; /* Черный фон */
-    color: #ffffff; /* Белый текст */
-    font-family: Arial, sans-serif; /* Шрифт */
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(icon/bild1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-.logo {
-    max-width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.login-container {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    width: 100%;
 }
 
-a {
-    color: #ffffff; /* Белый цвет ссылок */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #cccccc; /* Светло-серый цвет ссылок при наведении */
-}
-
-.menu-container {
-    background-color: #111111; /* Темно-серый цвет меню */
-}
-
-/* Дополнительные стили для меню и кнопки toggle могут быть добавлены здесь */
-
-.content-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #111111; /* Темно-серый цвет футера */
-    color: #ffffff; /* Белый цвет текста в футере */
-    padding: 10px;
+.login-container h2 {
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
-    background-color: #808080;
-    color: #120a8f;
-    padding: 10px 0;
+.login-container label {
+    display: block;
+    margin: 10px 10 10px;
+    text-align: center;
 }
 
-@keyframes marquee {
-    0% { text-indent: 100% }
-    100% { text-indent: -100% }
+.login-container input {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 5px solid #dcdcdc;
+    border-radius: 10px;
 }
 
-/* Media queries для различных размеров экрана добавляются ниже */
+.login-container button {
+    background: #007BFF;
+    color: white;
+    padding: 15px;
+    border: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10.5);
+}
 
-/* Стили для мобильных устройств */
+.login-container button:hover {
+    background: #0056b3;
+}
+
+#error {
+    color: red;
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
 @media (max-width: 767px) {
-    .container {
+      .container {
         padding: 20px;
-    }
-    h1 {
+      }
+      h1 {
         font-size: 24px;
-    }
-    p {
+      }
+      p {
         font-size: 16px;
+      }
     }
-}
-
-/* Стили для планшетов и больших экранов */
+    
+    /* Стили для планшетов и больших экранов */
 @media (min-width: 768px) {
-    .container {
+      .container {
         max-width: 960px;
         margin: 0 auto;
         padding: 40px;
-    }
-    h1 {
+      }
+      h1 {
         font-size: 36px;
-    }
-    p {
+      }
+      p {
         font-size: 18px;
+      }
     }
-}
-
-/* Дополнительные стили и медиа-запросы могут быть добавлены здесь */
 
