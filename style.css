@@ -61,16 +61,33 @@ body {
 
 @media (max-width: 767px) {
     .login-container {
-        padding: 20px;
+        padding: 30px;
+        max-width: 90%;
     }
     .login-container h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .login-container input {
         width: 100%;
     }
     .login-container button {
-        padding: 10px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .login-container {
+        padding: 40px;
+        max-width: 95%;
+    }
+    .login-container h2 {
+        font-size: 28px;
+    }
+    .login-container input {
+        width: 100%;
+    }
+    .login-container button {
+        padding: 14px;
     }
 }
 
@@ -87,4 +104,3 @@ body {
         font-size: 18px;
     }
 }
-
